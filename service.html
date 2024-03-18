@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a travel website, for most popular place in the world">
+    <meta name="description" content="travel,worl travel,Thailand,Maldives,australia">
+    <link rel="shortcut icon" href="/dist/img/icons8-lock-24.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/dist/css/main.css">
+    <title>Travel.com</title>
+</head>
+<body onload="myFunction()">
+
+    <div id="loader">
+        <div class="preloader"></div>
+    </div>
+
+    <header class="header">
+        <nav class="navbar wrapper">
+            <div class="logo">
+                <a href="#">Travel <span>.</span></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="desktop">Dropdown <i class="fa fa-chevron-down"></i></a>
+                    <input type="checkbox" name="" id="show-menu">
+                    <label for="show-menu" class="mobile">Dropdown <i class="fa fa-chevron-down"></i></label>
+                    <ul class="nav-dropdown">
+                        <li><a href="#">Elements</a></li>
+                        <li><a href="#">Menu One</a></li>
+                        <li><a href="#">Menu Two</a></li>
+                        <li><a href="#">Menu Three</a></li>
+                    </ul>
+                </li>
+                <li><a href="service.html" class="active">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-two">
+            <div class="hero-two-container wrapper">
+                <h1>Services</h1>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                <button class="btn">Get Started</button>
+            </div>
+        </section>
+
+        <section class="places">
+            <div class="place-container wrapper">
+                <div class="place-items">
+                    <div class="place-img">
+                        <img src="/dist/img/img_1.jpg" alt="">
+                    </div>
+                    <div class="place-content">
+                        <h3>Amazing Travel</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+                <div class="place-items">
+                    <div class="place-img">
+                        <img src="/dist/img/img_2.jpg" alt="">
+                    </div>
+                    <div class="place-content">
+                        <h3>Book Your Trip</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+                <div class="place-items">
+                    <div class="place-img">
+                        <img src="/dist/img/img_3.jpg" alt="">
+                    </div>
+                    <div class="place-content">
+                        <h3>Discover the World</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+                <div class="place-items">
+                    <div class="place-img">
+                        <img src="/dist/img/img_1.jpg" alt="">
+                    </div>
+                    <div class="place-content">
+                        <h3>Great Support</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="enjoy">
+            <div class="enjoy-container wrapper">
+                <div class="enjoy-items">
+                    <div class="enjoy-icon">
+                        <i class="fa fa-paper-plane"></i>
+                    </div>
+                    <div class="enjoy-heading">
+                        <h3>Amazing Travel</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+                <div class="enjoy-items">
+                    <div class="enjoy-icon">
+                        <i class="fa fa-tag"></i>
+                    </div>
+                    <div class="enjoy-heading">
+                        <h3>Book Your Trip</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+                <div class="enjoy-items">
+                    <div class="enjoy-icon">
+                        <i class="fa fa-smile-o"></i>
+                    </div>
+                    <div class="enjoy-heading">
+                        <h3>Discover the World</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+                <div class="enjoy-items">
+                    <div class="enjoy-icon">
+                        <i class="fa fa-ban"></i>
+                    </div>
+                    <div class="enjoy-heading">
+                        <h3>Great Support</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service">
+            <div class="title wrapper">
+                <h2>Our Services</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                    language ocean</p>
+            </div>
+            <div class="service-container wrapper">
+                <div class="service-items">
+                    <div class="service-img">
+                        <img src="/dist/img/img_3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="service-items">
+                    <div class="service-icon">
+                        <img src="/dist/img/plane (1).png" alt="">
+                    </div>
+                    <div class="service-content">
+                        <h3>Easy & Free Transport</h3>
+                        <p>Even the all-powerful Pointing has no control about the blind texts.</p>
+                    </div>
+                </div>
+                <div class="service-items">
+                    <div class="service-icon">
+                        <img src="/dist/img/swimming (1).png" alt="">
+                    </div>
+                    <div class="service-content">
+                        <h3>Swimming Pool</h3>
+                        <p>Even the all-powerful Pointing has no control about the blind texts.</p>
+                    </div>
+                </div>
+                <div class="service-items">
+                    <div class="service-icon">
+                        <img src="/dist/img/restaurant.png" alt="">
+                    </div>
+                    <div class="service-content">
+                        <h3>Delicious Food</h3>
+                        <p>Even the all-powerful Pointing has no control about the blind texts.</p>
+                    </div>
+                </div>
+                <div class="service-items">
+                    <div class="service-icon">
+                        <img src="/dist/img/playground.png" alt="">
+                    </div>
+                    <div class="service-content">
+                        <h3>Playground</h3>
+                        <p>Even the all-powerful Pointing has no control about the blind texts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container wrapper">
+            <div class="footer-items">
+                <div class="footer-title">
+                    <h2>About Us</h2>
+                </div>
+                <div class="footer-content">
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+                </div>
+                <div class="footer-icon">
+                    <ul>
+                        <li><i class="fa fa-twitter"></i></li>
+                        <li><i class="fa fa-instagram"></i></li>
+                        <li><i class="fa fa-facebook"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-items">
+                <div class="footer-title">
+                    <h2>Pages</h2>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-items">
+                <div class="footer-title">
+                    <h2>Resources</h2>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-items">
+                <div class="footer-title">
+                    <h2>Contact</h2>
+                </div>
+                <div class="footer-info">
+                    <ul>
+                        <span><i class="fa fa-envelope"></i></span>
+                        <li>info@princekashyap</li>
+                        <span><i class="fa fa-mobile"></i></span>
+                        <li>+1 222 212 3819</li>
+                        <span><i class="fa fa-map-marker"></i></span>
+                        <li>43 Raymouth Rd. Baltemoer, London 3910</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom wrapper">
+            <div class="foot-bottom-left">
+                <p>Copyright ©2023 All rights reserved | This template is made with <i class="fa fa-heart"></i> by
+                    prince kashyap</p>
+            </div>
+            <div class="foot-bottom-right">
+                <ul>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/edcd5c8c16.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>

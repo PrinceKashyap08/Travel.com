@@ -1,0 +1,87 @@
+.hero-two {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(/dist/img/bg-2.jpg);
+    background-size: cover;
+    background-position: center;
+
+    .hero-two-container {
+        @include flex(center);
+        flex-direction: column;
+        gap: 20px;
+        height: 100%;
+
+        h1 {
+            font-family: serif;
+            font-family: 'Cinzel', serif;
+            text-align: center;
+            font-size: 3.5rem;
+            font-weight: 400;
+            max-width: 75%;
+            color: $white;
+        }
+        p{
+            max-width: 75%;
+            font-size: 1.4rem;
+            text-align: center;
+            line-height: 1.5;
+            color: $white;
+        }
+    }
+}
+
+.places{
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    .place-container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 25px;
+        .place-items{
+            .place-content{
+                padding-top: 20px;
+                h3{
+                    font-size: 1.8rem;
+                    padding-bottom: 5px;
+                }
+                p{
+                    font-size: 1.2rem;
+                    color: #888;
+                }
+            }
+        }
+    }
+}
+
+.enjoy{
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    .enjoy-container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-items: center;
+        text-align: center;
+        grid-gap: 25px;
+        .enjoy-items{
+            .enjoy-icon{
+                padding-bottom: 15px;
+                i{
+                    font-size: 2.5rem;
+                }
+            }
+            .enjoy-heading{
+                h3{
+                    font-size: 1.8rem;
+                    padding-bottom: 10px;
+                }
+                p{
+                    font-size: 1.2rem;
+                    color: #888;
+                }
+            }
+        }
+    }
+}

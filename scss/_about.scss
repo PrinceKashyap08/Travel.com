@@ -1,0 +1,152 @@
+.choose {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+
+    .choose-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 25px;
+
+        .choose-items {
+            .accordion {
+                .faq {
+                    padding-bottom: 15px;
+
+                    label {
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                        cursor: pointer;
+
+                        h3 {
+                            font-size: 1.5rem;
+                            font-weight: 400;
+                            color: #888;
+                        }
+                    }
+
+                    input {
+                        display: none;
+                    }
+
+                    .choose-content {
+                        max-height: 0;
+                        overflow: hidden;
+                        p {
+                            padding-top: 10px;
+                            font-size: 1.2rem;
+                            color: #888;
+                            background-color: #f8f9fa;
+                            padding: 20px 15px;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+
+            .accordion input:checked~.choose-content {
+                max-height: 100%;
+            }
+
+            .accordion input:checked~label i,
+            .accordion input:checked~label h3 {
+                color: $sky-blue;
+            }
+
+            .accordion input:checked~label i::before {
+                content: '\f068';
+            }
+
+            .choose-title {
+                h2 {
+                    padding-bottom: 30px;
+                    font-size: 2.5rem;
+                    font-weight: 500;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 100px;
+                        height: 3px;
+                        top: 45px;
+                        left: 5px;
+                        background-color: $sky-blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+input:checked~.choose-content {
+    max-height: 100%;
+}
+
+.gallery {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+
+    .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;
+
+        .gallery-right {
+            .gallery-title {
+                h2 {
+                    padding-bottom: 30px;
+                    font-size: 2.5rem;
+                    font-weight: 500;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 60px;
+                        height: 3px;
+                        top: 40px;
+                        left: 5px;
+                        background-color: $sky-blue;
+                    }
+                }
+
+                p {
+                    font-size: 1.4rem;
+                    color: #888;
+                }
+            }
+        }
+    }
+}
+
+.team {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+
+    .team-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 25px;
+        text-align: center;
+
+        .team-items {
+            .team-info {
+                padding-top: 10px;
+
+                h3 {
+                    font-size: 1.8rem;
+                    padding-bottom: 5px;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    color: #888;
+                }
+            }
+        }
+    }
+}

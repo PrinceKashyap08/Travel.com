@@ -1,0 +1,109 @@
+.map{
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    .map-container{
+        iframe{
+            width: 100%;
+            height: 450px;
+        }
+    }
+}
+
+.contact{
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    .contact-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 100px;
+        .contact-left{
+            .contact-title{
+                h3{
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    padding-bottom: 5px;
+                }
+                p{
+                    font-size: 2.5rem;
+                    font-family: serif;
+                }
+            }
+            .contact-form{
+                padding-top: 20px;
+                form{
+                    .input-50{
+                        display: flex;
+                        gap: 15px;
+                        div{
+                            padding-bottom: 10px;
+                            width: 100%;
+                            label{
+                                display: block;
+                                font-size: 1.6rem;
+                                padding-bottom: 10px;
+                            }
+                            input{
+                                width: 100%;
+                                padding: 12px;
+                                outline-color: $sky-blue;
+                                border: 1px solid #888;
+                            }
+                        }
+                    }
+                    .input-100{
+                        display: flex;
+                        flex-direction: column;
+                        padding-bottom: 10px;
+                        label{
+                            font-size: 1.6rem;
+                            padding-bottom: 10px;
+                        }
+                        input{
+                            width: 100%;
+                            padding: 12px;
+                            outline-color: $sky-blue;
+                            border: 1px solid #888;
+                        }
+                    }
+                    .input-100{
+                        display: flex;
+                        flex-direction: column;
+                        label{
+                            font-size: 1.6rem;
+                            padding-bottom: 10px;
+                        }
+                        textarea{
+                            width: 100%;
+                            resize: none;
+                            outline-color: $sky-blue;
+                            border: 1px solid #888;
+                        }
+                    }
+                    .btn{
+                        margin-top: 10px;
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+        .contact-right{
+            align-self: center;
+            .contact-items{
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                padding-bottom: 80px;
+                i{
+                    font-size: 3rem;
+                    color: #888;
+                }
+                p{
+                    font-size: 1.8rem;
+                    color: #888;
+                }
+            }
+        }
+    }
+}
